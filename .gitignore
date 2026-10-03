@@ -1,0 +1,41 @@
+# ==========================================
+# LitePOS Global Gitignore (Monorepo)
+# ==========================================
+
+# 1. Dependency Folders (Jangan di-push karena sizenya besar)
+**/node_modules/
+**/vendor/
+**/.pnpm-store/
+
+# 2. Environment Variables & Secrets (Sangat Rahasia!)
+**/.env
+**/.env.local
+**/.env.production
+**/.env.development
+**/.env.local
+**/*.env.sample
+
+# 3. Build & Output Folders (Otomatis digenerate saat dicompile)
+**/dist/
+**/build/
+**/.next/
+**/.nuxt/
+**/out/
+
+# 4. Logs & Debugging
+**/*.log
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/.pnpm-debug.log*
+
+# 5. OS & IDE System Files (File sampah otomatis dari komputer/laptop)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+**/.vscode/
+**/.idea/
